@@ -1,0 +1,10 @@
+.services {
+    padding: 100px 0;
+    background: #f0f0f3;
+    &__list {
+        padding-top: 50px;
+        &__inner {
+            padding: 30px;
+        }
+    }
+}

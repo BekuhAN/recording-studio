@@ -1,0 +1,42 @@
+.header {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: .8s;
+  &.scroll {
+    background: #21212e;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+  }
+  &__logo {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      height: 100%;
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    &__link {
+      font-family: "Montserrat Alternates";
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff;
+      &_active {
+        color: #dc2751;
+      }
+    }
+  }
+}

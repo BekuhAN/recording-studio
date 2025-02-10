@@ -10,4 +10,30 @@ body {
 
 .container {
   width: 1600px;
+  margin: 0 auto; 
+}
+
+.btn {
+  background: #dc2751;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 35px;
+  font-family: "Montserrat Alternates";
+  font-weight: 700;
+  padding: 20px 50px;
+  transition: all .3s;
+}
+
+.btn.light:hover  {
+  background: #fff;
+  color: #000;
+}
+
+.btn.dark:hover  {
+  background: #282834;
+}
+
+.MuiCardContent-root {
+  padding: 0 !important;
 }

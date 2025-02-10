@@ -1,0 +1,30 @@
+.preview {
+  background: linear-gradient(rgba(#21212e, 0.8), rgba(#21212e, 0.8)),
+    url("../../assets/preview-bg.jpg");
+  background-size: 100% auto;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__content {
+    color: #fff;
+  }
+  &__title {
+    font-size: 110px;
+    font-family: "Montserrat Alternates";
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 30px;
+    span {
+      -webkit-text-stroke: 5px #fff;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &__text {
+    opacity: 0.7;
+    width: 50%;
+    line-height: 1.5;
+    margin-bottom: 50px;
+  }
+}
