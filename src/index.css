@@ -23,6 +23,7 @@ body {
   font-weight: 700;
   padding: 20px 50px;
   transition: all .3s;
+  cursor: pointer;
 }
 
 .btn.light:hover  {
@@ -36,4 +37,57 @@ body {
 
 .MuiCardContent-root {
   padding: 0 !important;
+}
+
+.MuiTab-root {
+  display: inline-block !important;
+  padding: 20px 30px !important;
+  font-size: 18px !important;
+  transition: .5s !important;
+}
+.MuiTab-root:hover {
+  color: #000 !important;
+}
+
+.Mui-selected {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+.MuiTabs-indicator {
+  display: none !important;
+}
+
+.rhap_progress-container, 
+.rhap_total-time, 
+.rhap_additional-controls {
+  display: none !important;
+}
+
+.rhap_container  {
+  box-shadow: none  !important;
+}
+
+.rhap_volume-controls {
+  /* justify-content: start !important; */
+}
+
+.rhap_progress-section {
+  flex: 0 !important;
+}
+
+.rhap_horizontal {
+  /* justify-content: space-between !important; */
+}
+
+.rhap_main-controls svg path {
+  fill: #dc2751;
+}
+
+.rhap_volume-container svg path {
+  fill: #000;
+}
+
+.rhap_volume-indicator {
+  background: #000 !important;
 }
