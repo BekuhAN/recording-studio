@@ -238,5 +238,156 @@
         "Микрофоны Shure SM58"
       ]
     }
+  ],
+  "equipment": [
+    {
+      "id": 1,
+      "name": "Микрофоны",
+      "list": [
+        "Slate ML-1 VMS",
+        "The Kracken Sub Kick",
+        "Nuemann KM 184 x2",
+        "Lewitt LCT 940",
+        "Rode NTK",
+        "Electrovoice RE-20",
+        "Sennheiser MKH 70",
+        "Shure SM58-C",
+        "Slate ML-1 VMS",
+        "The Kracken Sub Kick",
+        "Nuemann KM 184 x2",
+        "Audio Technica AT2035",
+        "Blue Microphones Bluebird SL",
+        "AKG C214",
+        "Rode NT1-A"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Мониторы ",
+      "list": [
+        "KRK Rokit 5-G3",
+        "JBL Lsr305",
+        "Mackie Mr5 Mk3",
+        "M-Audio Bx5 D2",
+        "Presonus Eris E5",
+        "Audioengine A5+",
+        "Yamaha Hs8",
+        "Eve Audio Sc205",
+        "Dynaudio Lyd 7",
+        "Focal Alpha 80",
+        "Avantone Mix Cubes",
+        "Neumann Kh 120",
+        "Genelec M040",
+        "Focal Twin6 Be",
+        "Adam A77x"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Инструменты ",
+      "list": [
+        "Drums Rogers Holiday ’69",
+        "Snare Ludwig Jazz Festival",
+        "Drums Pearl Export Series X2",
+        "Zildjian Avedis new beat 14″ Hi-Hat",
+        "Sabian B8 14″ Hi-Hat",
+        "Zildjian Costantinople 18″ Crash",
+        "Istanbul Agop traditional Dark 17″ Crash",
+        "Istanbul Agop azure 20″ Ride",
+        "Fender Precision Bass 1983 Elite USA",
+        "Yamaha G3 Baby Grand Piano",
+        "Plairson upright Piano",
+        "Rhodes MKI 73 Piano",
+        "Wurlitzer 200 electronic piano",
+        "Farfisa Doria Organ",
+        "Farfisa Vip 600 Organ",
+        "Farfisa Compact Organ"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Программное обеспечение",
+      "list": [
+        "Denemo",
+        "Dorico",
+        "DirectMusic",
+        "Vsxu",
+        "Liquid Rhythm",
+        "Guitar Rig",
+        "Kurzweil Digital Piano",
+        "FL Studio",
+        "Sound Forge",
+        "Pro Tools",
+        "WaveLab",
+        "Deckadance",
+        "MultitrackStudio",
+        "Steinberg Nuendo",
+        "Sony Sound Forge"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Усилители",
+      "list": [
+        "Marshall JCM 25/50 2555X",
+        "Vox AC15C2",
+        "Mesa/Boogie Mark Five: 25",
+        "Boss Katana-100",
+        "PRS MT 15 Mark Tremonti",
+        "Fender Blues Junior IV",
+        "Blackstar HT Club 40 MkII",
+        "Orange Rocker 32",
+        "Victory V40 ‘The Duchess’",
+        "Kemper Profiler Head",
+        "Yamaha THR100HD",
+        "Fender ’68 Custom Deluxe Reverb",
+        "EVH 5150III 50W EL34",
+        "Hughes & Kettner Black Spirit 200",
+        "Mesa/Boogie Triple Crown TC-50",
+        "EVH 5150III 50W EL34"
+      ]
+    }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "name": "Виолетта Румынаская",
+      "img": "client-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Артемий Ветров",
+      "img": "client-2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Василиса Ланская",
+      "img": "client-3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Глеб Соколов",
+      "img": "client-4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Людмила Ясенева",
+      "img": "client-5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Макар Зорин",
+      "img": "client-6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Злата Чернецкая",
+      "img": "client-7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Мирон Дубравин",
+      "img": "client-8.jpg"
+    }
   ]
 }
