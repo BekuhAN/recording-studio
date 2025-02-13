@@ -91,3 +91,27 @@ body {
 .rhap_volume-indicator {
   background: #000 !important;
 }
+
+.equipments_restyle .MuiTab-root {
+  border-radius: 50px;
+  font-size: 14px !important;
+  text-transform: none;
+  font-family: "Montserrat Alternates";
+  font-weight: 700;
+  padding: 6px 18px !important;
+  border: 1px solid transparent;
+  transition: .3s;
+}
+
+.equipments_restyle .MuiTab-root:hover {
+  color: #dc2751 !important;
+}
+
+.equipments_restyle [aria-selected="true"] {
+  border-color:  #dc2751;
+  color: #dc2751;
+}
+
+.equipments_restyle .MuiTabs-flexContainer {
+  gap: 10px;
+}

@@ -5,6 +5,7 @@ import Home from "./pages/home/home.tsx";
 import About from "./pages/about/about.tsx";
 import Contacts from "./pages/contacts/contacts.tsx";
 import Header from "./components/header/header.tsx";
+import Footer from "./components/footer/footer.tsx";
 
 function App() {
   const { pathname } = useLocation();
@@ -19,6 +20,7 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/contacts" element={<Contacts />}></Route>
       </Routes>
+      <Footer />
     </>
   );
 }

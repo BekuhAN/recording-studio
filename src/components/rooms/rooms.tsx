@@ -2,7 +2,7 @@ import { ReactElement, useState } from "react";
 import SectionTitle from "../section-title/section-title";
 import styles from "./rooms.module.scss";
 import { useRooms } from "../../data-access/rooms/use-rooms";
-import { Box, Tab, Tabs } from "@mui/material";
+import {  Tab, Tabs } from "@mui/material";
 import RoomItem from "../room-item/room-item";
 
 interface TabPanelProps {

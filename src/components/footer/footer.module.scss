@@ -1,0 +1,156 @@
+.footer {
+  background: #282834;
+  color: #fff;
+  &__copyright {
+    background: #1c1c24;
+    padding: 30px 0;
+  }
+  &__wrapper {
+    background: url("../../assets/footer-bg.png") no-repeat;
+    background-position: center bottom;
+  }
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 100px 0;
+    gap: 100px;
+  }
+  &__logo {
+    height: 30px;
+    img {
+      height: 100%;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    font-family: "Montserrat Alternates";
+    text-transform: capitalize;
+    font-weight: 900;
+    color: #dc2751;
+    margin-bottom: 40px;
+  }
+  &__nav {
+    list-style: none;
+    padding-left: 25px;
+    &__item {
+      position: relative;
+      margin-bottom: 20px;
+      &::after {
+        content: "\00bb";
+        position: absolute;
+        left: -30px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 18px;
+        color: #dc2751;
+      }
+    }
+    &__link {
+      color: #fff;
+      text-decoration: none;
+      transition: 0.5s;
+      font-weight: 500;
+      &:hover {
+        color: #dc2751;
+      }
+    }
+  }
+
+  &__description {
+    color: #fff;
+    line-height: 1.5;
+    margin: 40px 0;
+    opacity: 0.7;
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    &__link {
+      font-size: 18px;
+      color: #dc2751;
+      svg {
+        width: 30px;
+        height: 30px;
+        path {
+          fill: #dc2751;
+          transition: 0.3s;
+        }
+      }
+      &:hover {
+        svg {
+          path {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+  &__contacts {
+    &__item {
+      margin-bottom: 30px;
+      padding-left: 40px;
+      position: relative;
+    }
+    &__icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #dc2751;
+    }
+    &__title {
+      font-family: "Montserrat Alternates";
+      font-weight: 700;
+      color: #dc2751;
+      margin-bottom: 10px;
+    }
+    &__text {
+      line-height: 1.5;
+      a {
+        color: #fff;
+        text-decoration: none;
+        transition: 0.3s;
+        &:hover {
+          color: #dc2751;
+        }
+      }
+    }
+  }
+  &__form {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 3px;
+    height: 60px;
+    input {
+      height: 50px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      width: 100%;
+      &::placeholder {
+        font-family: "Ubuntu Sans Mono", serif;
+      }
+    }
+    &__btn {
+      min-width: 55px;
+      height: 55px;
+      background: #dc2751;
+      border-radius: 50%;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      transition: 0.3s;
+      padding-left: 5px;
+      cursor: pointer;
+      &:hover {
+        background: #282834;
+      }
+    }
+  }
+}
