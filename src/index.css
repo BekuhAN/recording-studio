@@ -115,3 +115,11 @@ body {
 .equipments_restyle .MuiTabs-flexContainer {
   gap: 10px;
 }
+
+.MuiBreadcrumbs-separator {
+  color: #fff !important;
+}
+
+.MuiBreadcrumbs-ol {
+  gap: 20px;
+}

@@ -1,0 +1,49 @@
+.comments {
+    padding: 100px 0;
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 50px 150px;
+        gap: 100px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__icon {
+            font-size: 24px;
+            svg {
+                width: 50px;
+                height: 50px;
+                path {
+                    fill: #dc2751;
+                }
+            }
+        }
+        &__text {
+            font-size: 24px;
+            line-height: 1.5;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        &__author {
+            font-size: 18px;
+            font-family: "Montserrat Alternates";
+            font-weight: 900;
+            text-transform: capitalize;
+            position: relative;
+            padding-top: 30px;
+            &::before {
+                content: "";
+                width: 100px;
+                height: 2px;
+                background: #dc2751;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%);
+            }
+        }
+    }
+}

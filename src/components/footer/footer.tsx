@@ -1,4 +1,4 @@
-import { ReactElement, use, useRef, useState } from "react";
+import { FormEvent, ReactElement, useRef, useState } from "react";
 import styles from "./footer.module.scss";
 import Logo from "../../assets/logo.png";
 import { useNavigate } from "../../data-access/navigate/use-navigate";
@@ -16,7 +16,7 @@ export default function Footer(): ReactElement {
   const [isError, setError] = useState(false);
   const [errorText, setErrorText] = useState("");
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: FormEvent) => {
     e.preventDefault();
     // kelagahi@lyricslrc.com
     emailjs
