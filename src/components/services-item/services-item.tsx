@@ -4,8 +4,9 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import styles from "./services-item.module.scss";
 import clsx from "clsx";
-import { Box, Modal } from "@mui/material";
+import { Box, Drawer, Modal } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
+import Form from "../form/form";
 
 interface ServicesItemProps {
   item: Services;
@@ -15,6 +16,7 @@ export default function ServicesItem({
   item,
 }: ServicesItemProps): ReactElement {
   const [open, setOpen] = useState(false);
+  const [openForm, setOpenForm] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
@@ -105,7 +107,7 @@ export default function ServicesItem({
             <div className={styles.services_item__modal__footer}>
               <button
                 className={clsx("btn dark", styles.services_item__modal__btn)}
-                onClick={handleClose}
+                onClick={() => setOpenForm(true)}
               >
                 Заказать
               </button>
@@ -113,6 +115,19 @@ export default function ServicesItem({
           </div>
         </Box>
       </Modal>
+      <Drawer
+        anchor="right"
+        open={openForm}
+        onClose={() => setOpenForm(false)}
+        sx={{ zIndex: 9999 }}
+      >
+        <div className={styles.services_item__form}>
+          <h3 className={styles.services_item__form__title}>
+            Напишите нам, мы с вами свяжемся
+          </h3>
+          <Form />
+        </div>
+      </Drawer>
     </>
   );
 }

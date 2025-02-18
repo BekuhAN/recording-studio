@@ -41,4 +41,63 @@
       border: none;
     }
   }
+
+  &__modal {
+    &__wrapper {
+      overflow-y: auto;
+      max-height: 70vh;
+      margin-top: 30px;
+    }
+    &__title {
+      font-size: 24px;
+      font-family: "Montserrat Alternates";
+      font-weight: 900;
+    }
+    &__image {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    &__description {
+      margin: 30px 0;
+      line-height: 1.5;
+    }
+    &__equipment {
+      &__title {
+        font-size: 20px;
+        font-family: "Montserrat Alternates";
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      &__list {
+        padding-left: 20px;
+        list-style: none;
+      }
+      &__item {
+        margin-bottom: 10px;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          left: -20px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 8px;
+          height: 8px;
+          background: #dc2751;
+          border-radius: 50%;
+        }
+      }
+    }
+    &__close {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      border: none;
+      padding: 10px 12px;
+      border-radius: 50%;
+      line-height: 1;
+    }
+  }
 }

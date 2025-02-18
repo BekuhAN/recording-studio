@@ -1,7 +1,7 @@
 import { ReactElement, useEffect, useState } from "react";
 import styles from "./header.module.scss";
 import { useNavigate } from "../../data-access/navigate/use-navigate";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Logo from "../../assets/logo.png";
 import clsx from "clsx";
 
@@ -26,9 +26,9 @@ export default function Header(): ReactElement {
   return (
     <header className={clsx(isScroll && styles.scroll, styles.header)}>
       <div className={clsx("container", styles.header__inner)}>
-        <div className={styles.header__logo}>
+        <Link to={"/"} className={styles.header__logo}>
           <img src={Logo} alt="logo" />
-        </div>
+        </Link>
         <ul className={styles.header__list}>
           {list.map((item) => (
             <li key={item.id}>

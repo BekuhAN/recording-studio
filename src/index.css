@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+  width: 3px;               /* ширина scrollbar */
+}
+*::-webkit-scrollbar-track {
+  background: #ccc;        /* цвет дорожки */
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #dc2751;    /* цвет плашки */
+  border-radius: 20px;       /* закругления плашки */
+  border: 3px solid dc2751;  /* padding вокруг плашки */
+}
+
 body {
   font-family: "Ubuntu Sans Mono", serif;
 }

@@ -1,19 +1,50 @@
 .contacts {
   &__inner {
-    padding: 100px 150px;
+    padding: 100px 0;
   }
   &__content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
     &__wrapper {
-      padding: 100px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 100px;
+    }
+    &__image {
+      height: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        height: 100%;
+      }
+    }
+    &__hours {
+      &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        font-weight: 600;
+        position: relative;
+        &::after {
+          content: "";
+          display: block;
+          width: 120px;
+          height: 1px;
+          background: #cecece;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          transform: translateX(-50%);
+        }
+      }
     }
     &__title {
-      font-size: 40px;
+      font-size: 35px;
       text-transform: capitalize;
       font-weight: 500;
       margin-bottom: 20px;
+      font-family: "Montserrat Alternates";
+      font-weight: 900;
     }
     &__text {
       font-size: 15px;
@@ -32,24 +63,33 @@
       &__title {
         font-size: 18px;
         text-transform: capitalize;
-        font-weight: 500;
+        font-weight: 700;
         color: #000;
+        margin-bottom: 5px;
+        font-family: "Montserrat Alternates";
       }
       &__description {
         font-size: 15px;
         line-height: 1.5;
         opacity: 0.6;
+        a {
+          text-decoration: none;
+          color: #dc2751;
+        }
       }
     }
   }
   &__form {
+    padding: 100px 400px;
+    background: #f0f0f3;
     &__title {
       font-size: 40px;
       text-transform: capitalize;
-      font-weight: 500;
+      font-weight: 900;
       margin-bottom: 20px;
       text-align: center;
       margin: 50px 0;
+      font-family: "Montserrat Alternates";
     }
   }
 }

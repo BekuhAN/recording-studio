@@ -1,4 +1,18 @@
 .services_item {
+  &__form {
+    background: #f0f0f3;
+    height: 100%;
+    padding: 50px;
+    width: 40vw;
+    &__title {
+      font-size: 30px;
+      font-family: "Montserrat Alternates";
+      font-weight: 900;
+      text-transform: capitalize;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  }
   &__img {
     height: 340px;
     display: flex;
@@ -31,13 +45,13 @@
     padding: 50px;
     position: relative;
     &__close {
-        position: absolute;
-        right: 0;
-        top: 0;
-        border: none;
-        padding: 10px 12px;
-        border-radius: 50%;
-        line-height: 1;
+      position: absolute;
+      right: 0;
+      top: 0;
+      border: none;
+      padding: 10px 12px;
+      border-radius: 50%;
+      line-height: 1;
     }
     &__title {
       font-family: "Montserrat Alternates";
